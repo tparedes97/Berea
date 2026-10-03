@@ -37,6 +37,7 @@ Abre http://localhost:8000. Para usar otro puerto: `python server.py 8080`.
 - **Fotos**: reemplaza los archivos en `web/assets/` manteniendo el nombre
   (`foto-0.jpg` … `foto-7.jpg`). En `contenido.json`, cada servicio indica qué foto
   usa (`"foto": 1`) y su texto alternativo (`"foto_alt"`).
+- **Color de la portada**: la imagen original está en `originales/portada-tech.png`. `python scripts/ajustar_portada.py` acerca su cian al turquesa del logo (acepta una intensidad entre 0 y 1).
 - **Logo, favicon e imágenes para redes**: si cambias el logo o las fotos, ejecuta
   `pip install pillow` y luego `python scripts/generar_imagenes.py`. El favicon es un
   recorte del símbolo del logo original (no se redibuja).

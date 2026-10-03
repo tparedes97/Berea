@@ -256,7 +256,7 @@ def pagina_inicio():
       <a class="button" href="#servicios">{e(i["boton"])} {FLECHA}</a>
     </div>
     <figure class="hero-art">
-      <img src="/assets/portada-tech.png" alt="{e(i["portada_alt"])}" width="574" height="456" fetchpriority="high">
+      <img src="/assets/portada-tech.png?v={VERSION}" alt="{e(i["portada_alt"])}" width="574" height="456" fetchpriority="high">
     </figure>
   </div>
 </section>
