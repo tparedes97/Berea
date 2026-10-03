@@ -57,7 +57,7 @@ def main():
 
     og = A / "social"
     og.mkdir(exist_ok=True)
-    social(A / "portada-tech.png", og / "inicio.jpg")
+    social(A / "portada-tech.webp", og / "inicio.jpg")
     datos = json.loads((RAIZ / "contenido.json").read_text(encoding="utf-8"))
     for srv in datos["servicios"]:
         social(A / f"foto-{srv['foto']}.jpg", og / f"{srv['slug']}.jpg")

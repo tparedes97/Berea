@@ -1,6 +1,7 @@
 """Acerca el cian de la portada al turquesa del logo, sin tocar las zonas en gris.
 
-Lee originales/portada-tech.png y escribe web/assets/portada-tech.png.
+Lee originales/portada-tech-hd.png (versión ampliada 4× con Real-ESRGAN a partir de
+originales/portada-tech.png) y escribe web/assets/portada-tech.webp a 1800 px de ancho.
     pip install pillow numpy
     python scripts/ajustar_portada.py [intensidad]   # 0 = original, 1 = ajuste completo
 Solo cambia el color: la composición, la persona y la ciudad quedan iguales.
@@ -13,7 +14,11 @@ from PIL import Image, ImageFilter
 RAIZ = Path(__file__).resolve().parent.parent
 k = float(sys.argv[1]) if len(sys.argv) > 1 else 1.0
 
-rgb = np.asarray(Image.open(RAIZ / "originales/portada-tech.png").convert("RGB")).astype(np.float32) / 255
+fuente = RAIZ / "originales/portada-tech-hd.png"
+if not fuente.exists():
+    fuente = RAIZ / "originales/portada-tech.png"
+base = Image.open(fuente).convert("RGB")
+rgb = np.asarray(base).astype(np.float32) / 255
 mx, mn = rgb.max(2), rgb.min(2)
 l = (mx + mn) / 2
 d = mx - mn
@@ -26,7 +31,7 @@ h = np.where(d == 0, 0, h)
 # Se mide por croma (intensidad absoluta del color), que no se dispara en los blancos,
 # y se suaviza para que la transición no deje manchas.
 w = np.clip((d - 0.05) / 0.28, 0, 1)
-w = np.asarray(Image.fromarray((w * 255).astype(np.uint8)).filter(ImageFilter.GaussianBlur(1.5))).astype(np.float32) / 255 * k
+w = np.asarray(Image.fromarray((w * 255).astype(np.uint8)).filter(ImageFilter.GaussianBlur(1.5 * base.width / 574))).astype(np.float32) / 255 * k
 h2 = h + (180 - h) * 0.9 * w            # tono hacia el turquesa del logo (180°)
 l2 = l * (1 - 0.26 * w)                 # menos pastel, más profundo
 s2 = s * (1 - 0.06 * w)
@@ -42,5 +47,8 @@ for i, (a1, a2, a3) in enumerate(tabla):
     sel = seg == i
     for ch, val in enumerate((a1, a2, a3)):
         out[..., ch][sel] = (val + m)[sel]
-Image.fromarray((np.clip(out, 0, 1) * 255 + .5).astype(np.uint8)).save(RAIZ / "web/assets/portada-tech.png", optimize=True)
+final = Image.fromarray((np.clip(out, 0, 1) * 255 + .5).astype(np.uint8))
+ancho = min(1800, final.width)
+final = final.resize((ancho, round(final.height * ancho / final.width)), Image.LANCZOS)
+final.save(RAIZ / "web/assets/portada-tech.webp", quality=86, method=6)
 print("Portada ajustada con intensidad", k)
