@@ -201,7 +201,7 @@ def documento(titulo, descripcion, ruta, imagen, cuerpo, actual=None, indexar=Tr
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <link rel="preload" href="/assets/fonts/dm-sans.woff2" as="font" type="font/woff2" crossorigin>{precarga}
 <link rel="stylesheet" href="/styles.css?v={VERSION}">
-<script>document.documentElement.classList.replace('no-js','js')</script>{ld}
+<script>document.documentElement.classList.remove('no-js');document.documentElement.classList.add('js')</script>{ld}
 </head>
 <body class="{cuerpo_clase}">
 <a class="skip-link" href="#contenido">Ir al contenido</a>

@@ -116,7 +116,7 @@ h3 { font-size: 17px; line-height: 1.35; font-weight: 600; letter-spacing: -.005
 
 /* ---------- Cabecera ---------- */
 .site-header {
-  position: sticky; top: 0; z-index: 50;
+  position: sticky; top: env(safe-area-inset-top, 0px); z-index: 50;
   background: rgba(255, 255, 255, .96);
   border-bottom: 1px solid transparent;
   transition: border-color .2s ease;
