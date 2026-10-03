@@ -175,6 +175,11 @@ def documento(titulo, descripcion, ruta, imagen, cuerpo, actual=None, indexar=Tr
         "email": SITIO["email"],
         "telephone": SITIO["whatsapp_visible"].replace(" ", ""),
         **({"sameAs": [SITIO["linkedin"]]} if SITIO.get("linkedin") else {}),
+        "description": SITIO["descripcion"],
+        "areaServed": {"@type": "Country", "name": "Perú"},
+        "knowsLanguage": "es",
+        "makesOffer": [{"@type": "Offer", "itemOffered": {"@type": "Service", "name": x["titulo"],
+                        "url": SITIO["url"] + url_servicio(x)}} for x in SERVICIOS],
     }
     precarga = ('\n<link rel="preload" href="/assets/fonts/source-serif-4.woff2" as="font" type="font/woff2" crossorigin>'
                 if cuerpo_clase != "page-home" else "")
@@ -294,7 +299,7 @@ def pagina_inicio():
 
 {contacto(i["contacto_titulo"], i["contacto_acento"], i["contacto_texto"])}'''
     return documento(
-        "Berea Consulting | Talento, gestión laboral y People Analytics",
+        SITIO["titulo_inicio"],
         SITIO["descripcion"], "/", "/assets/social/inicio.jpg", cuerpo, cuerpo_clase="page-home")
 
 
@@ -442,7 +447,7 @@ def main():
     urls = ["/"] + [url_servicio(s) for s in SERVICIOS]
     escribir("sitemap.xml", '<?xml version="1.0" encoding="UTF-8"?>\n'
              '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
-             + "".join(f"  <url><loc>{SITIO['url']}{u}</loc></url>\n" for u in urls) + "</urlset>\n")
+             + "".join(f"  <url><loc>{SITIO['url']}{u}</loc><lastmod>{date.today().isoformat()}</lastmod></url>\n" for u in urls) + "</urlset>\n")
     escribir("robots.txt", f"User-agent: *\nDisallow: /revision/\n\nSitemap: {SITIO['url']}/sitemap.xml\n")
 
 
