@@ -1,5 +1,4 @@
-# Netlify / Cloudflare Pages. Cada página existe como archivo estático
-# (servicios/<slug>/index.html), así que no se necesitan reescrituras.
+# Cloudflare Pages (también compatible con Netlify). Cada página existe como
+# archivo estático (servicios/<slug>/index.html), así que no hacen falta reescrituras.
 /servicios      /#servicios   301
 /servicios/     /#servicios   301
-/index.html     /             301

@@ -66,18 +66,31 @@ web/                  lo que se publica
 Las tipografías (DM Sans y Source Serif 4, licencia OFL) están incluidas en
 `web/assets/fonts/`, así que no dependen de Google Fonts.
 
-## Publicar
+## Publicar en Cloudflare Pages
 
-Hay que publicar solo la carpeta `web/`. Todavía no se ha publicado nada.
+El dominio `bereaconsulting.net` está en Cloudflare, así que el sitio se publica con
+Cloudflare Pages. Solo se publica la carpeta `web/`.
 
-- **Netlify**: conecta el repositorio. `netlify.toml` ya indica la carpeta `web`.
-- **Cloudflare Pages**: sin comando de compilación y con `web` como directorio de salida.
-- **Cualquier otro hosting estático**: sube el contenido de `web/`.
+1. En Cloudflare entra a **Workers & Pages → Create → Pages → Connect to Git**
+   (o "Import an existing Git repository") y autoriza GitHub.
+2. Elige el repositorio `tparedes97/Berea`.
+3. Configuración de compilación:
+   - Production branch: `claude/new-session-tti1k7`
+   - Framework preset: **None**
+   - Build command: vacío
+   - Build output directory: `web`
+4. **Save and Deploy**. En un minuto queda en una dirección `*.pages.dev`.
+5. En el proyecto, **Custom domains → Set up a custom domain**: agrega
+   `bereaconsulting.net` y luego `www.bereaconsulting.net`. Como el dominio ya está en
+   la misma cuenta, Cloudflare crea los registros DNS solo.
+   No borres los registros MX ni TXT del correo.
+
+Después, cada cambio que se suba a esa rama se publica automáticamente.
 
 Como cada página existe como archivo, las direcciones directas funcionan sin reglas
-especiales. `_redirects` envía `/servicios/` a la sección de servicios del inicio y
-las direcciones desconocidas muestran `404.html`. Si publicas en otro dominio,
-actualiza `"url"` en `contenido.json` y ejecuta `python build.py`.
+especiales. `_redirects` envía `/servicios/` a la sección de servicios del inicio,
+`_headers` agrega cabeceras de seguridad y caché, y las direcciones desconocidas
+muestran `404.html`. `netlify.toml` permite usar Netlify si algún día se cambia de hosting.
 
 El sitio no tiene formulario ni backend: los botones abren WhatsApp
 (+51 974 813 983) o el correo (info@bereaconsulting.net).
