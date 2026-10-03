@@ -339,6 +339,8 @@ h3 { font-size: 17px; line-height: 1.35; font-weight: 600; letter-spacing: -.005
 .footer-motto { margin-top: 18px; font-size: 14.5px; color: var(--muted); max-width: 30ch; line-height: 1.6; }
 .footer-title { font-size: 12px; font-weight: 600; letter-spacing: .16em; text-transform: uppercase; color: var(--navy); margin-bottom: 16px; }
 .footer-col li + li { margin-top: 9px; }
+.footer-social { display: inline-flex; align-items: center; gap: 8px; }
+.footer-social .icon { width: 17px; height: 17px; }
 .footer-col a:hover { color: var(--turq-dark); text-decoration: underline; text-underline-offset: 3px; }
 .footer-bottom { display: flex; justify-content: space-between; align-items: center; gap: 16px; flex-wrap: wrap; padding-block: 22px 28px; border-top: 1px solid var(--line); font-size: 13px; color: var(--muted); }
 .back-link { display: inline-flex; align-items: center; gap: 10px; color: var(--navy); font-size: 14px; }

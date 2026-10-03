@@ -43,6 +43,7 @@ ICONOS = {
     "arrow-right": '<path d="M5 12h14"/><path d="m12 5 7 7-7 7"/>',
     "arrow-left": '<path d="M19 12H5"/><path d="m12 19-7-7 7-7"/>',
     "chevron": '<path d="m6 9 6 6 6-6"/>',
+    "linkedin": '<path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/>',
 }
 
 
@@ -128,6 +129,9 @@ def contacto(titulo, acento, texto, tema="", boton="Contactar a Berea"):
 
 def pie(servicio=False):
     lista = "".join(f'<li><a href="{url_servicio(s)}">{e(s["titulo_corto"])}</a></li>' for s in SERVICIOS)
+    linkedin = (f'<li><a class="footer-social" href="{e(SITIO["linkedin"])}" target="_blank" rel="noopener">'
+                f'{icono("linkedin")} LinkedIn<span class="sr-only"> (abre en otra pestaña)</span></a></li>'
+                if SITIO.get("linkedin") else "")
     volver = (f'<a class="back-link" href="/#servicios">{icono("arrow-left")} Volver a servicios</a>'
               if servicio else "")
     return f'''<footer class="site-footer">
@@ -145,6 +149,7 @@ def pie(servicio=False):
       <ul>
         <li><a href="mailto:{SITIO["email"]}">{SITIO["email"]}</a></li>
         <li><a href="{e(whatsapp())}" target="_blank" rel="noopener">WhatsApp {SITIO["whatsapp_visible"]}<span class="sr-only"> (abre WhatsApp)</span></a></li>
+        {linkedin}
         <li><a href="/#enfoque">Nuestro enfoque</a></li>
       </ul>
     </div>
@@ -169,6 +174,7 @@ def documento(titulo, descripcion, ruta, imagen, cuerpo, actual=None, indexar=Tr
         "logo": SITIO["url"] + "/assets/logo.png",
         "email": SITIO["email"],
         "telephone": SITIO["whatsapp_visible"].replace(" ", ""),
+        **({"sameAs": [SITIO["linkedin"]]} if SITIO.get("linkedin") else {}),
     }
     precarga = ('\n<link rel="preload" href="/assets/fonts/source-serif-4.woff2" as="font" type="font/woff2" crossorigin>'
                 if cuerpo_clase != "page-home" else "")
