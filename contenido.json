@@ -1,0 +1,296 @@
+{
+  "sitio": {
+    "nombre": "Berea Consulting",
+    "url": "https://bereaconsulting.net",
+    "email": "info@bereaconsulting.net",
+    "whatsapp": "51974813983",
+    "whatsapp_visible": "+51 974 813 983",
+    "lema": "Organizaciones más humanas. Decisiones más inteligentes.",
+    "descripcion": "Talento, gestión laboral y People Analytics para fortalecer tu organización."
+  },
+  "inicio": {
+    "eyebrow": "Personas · Datos · Resultados",
+    "titulo": "Personas que impulsan.",
+    "titulo_acento": "Datos que transforman.",
+    "lead": "Talento, gestión laboral y tecnología para hacer crecer tu empresa.",
+    "boton": "Conoce nuestras soluciones",
+    "portada_alt": "Profesional sonriente con una tablet, rodeada de paneles de datos y una forma tecnológica turquesa",
+    "pilares": [
+      ["Talento", "Las personas adecuadas para un mayor potencial.", "users"],
+      ["Gestión laboral", "Cumplimiento, relaciones sanas y entornos de trabajo sostenibles.", "file-text"],
+      ["Datos y automatización", "Decisiones más inteligentes para un crecimiento real.", "chart"]
+    ],
+    "servicios_eyebrow": "Nuestras soluciones",
+    "servicios_titulo": "Soluciones para",
+    "servicios_acento": "cada desafío.",
+    "servicios_intro": "Combinamos experiencia en gestión de personas, conocimiento laboral y analítica de datos para brindar soluciones integrales y medibles.",
+    "enfoque_eyebrow": "Nuestro enfoque",
+    "enfoque_titulo": "Una mirada integral. Soluciones concretas.",
+    "enfoque_intro": "Partimos de tus prioridades para definir el alcance, los entregables y una ruta de trabajo clara.",
+    "enfoque": [
+      ["Entendemos", "Identificamos tu necesidad y el contexto del negocio."],
+      ["Diseñamos", "Definimos acciones, alcance y entregables."],
+      ["Acompañamos", "Ejecutamos y damos seguimiento a los acuerdos."]
+    ],
+    "complementarias": "También acompañamos iniciativas de capacitación, clima, retención y documentación de procesos.",
+    "contacto_titulo": "Conversemos",
+    "contacto_acento": "sobre tu empresa.",
+    "contacto_texto": "Estamos para escucharte, entender tus desafíos y ayudarte a encontrar la mejor solución."
+  },
+  "servicios": [
+    {
+      "slug": "seleccion-y-hunting",
+      "estado": "aprobada",
+      "titulo": "Selección y Hunting",
+      "titulo_corto": "Selección y hunting",
+      "icono": "users",
+      "tarjeta": "El talento que tu empresa necesita.",
+      "frase": "Personas clave para los desafíos de tu empresa.",
+      "descripcion": "Encontramos y evaluamos talento según el perfil, las competencias y el contexto de tu organización.",
+      "boton": "Solicitar una propuesta",
+      "foto": 1,
+      "foto_alt": "Entrevista de selección entre una profesional y un candidato",
+      "enfoque_titulo": "Una búsqueda a la medida de tu organización.",
+      "enfoque": [
+        ["Selección especializada", "Perfiles operativos, técnicos y profesionales.", "users"],
+        ["Hunting", "Búsqueda directa de perfiles ejecutivos y posiciones clave.", "target"],
+        ["Reclutamiento masivo", "Atracción y filtros para múltiples vacantes.", "file-search"]
+      ],
+      "proceso_titulo": "Así avanzamos contigo.",
+      "proceso": [
+        ["Definición del perfil", "Entendemos tus necesidades, el rol y el contexto."],
+        ["Búsqueda y filtros", "Identificamos y evaluamos candidatos potenciales."],
+        ["Entrevistas por competencias", "Profundizamos en experiencia, habilidades y ajuste cultural."],
+        ["Presentación de candidatos", "Te acercamos una terna con información clara y comparativa."]
+      ],
+      "entregables_titulo": "Información clara para elegir mejor.",
+      "entregables": [
+        ["Candidatos preseleccionados", "file-text"],
+        ["Síntesis de entrevistas", "messages"],
+        ["Fortalezas y aspectos por profundizar", "chart"],
+        ["Acompañamiento en la decisión", "users"]
+      ],
+      "entregables_foto": 6,
+      "entregables_foto_alt": "Revisión de documentos de candidatos sobre un escritorio",
+      "contacto_titulo": "Hablemos de tu próxima incorporación.",
+      "contacto_texto": "Cuéntanos el puesto que necesitas cubrir.",
+      "contacto_boton": "Contactar a Berea"
+    },
+    {
+      "slug": "evaluacion-de-talento",
+      "estado": "aprobada",
+      "titulo": "Evaluación de Talento",
+      "titulo_corto": "Evaluación de talento",
+      "icono": "chart",
+      "tarjeta": "Potenciamos el desarrollo con herramientas objetivas y confiables.",
+      "frase": "Conoce sus fortalezas. Decide con más claridad.",
+      "descripcion": "Integramos evaluaciones psicométricas y entrevistas por competencias para comprender el perfil de cada persona en relación con el puesto.",
+      "boton": "Solicitar una evaluación",
+      "foto": 4,
+      "foto_alt": "Profesional analizando información en su laptop",
+      "enfoque_titulo": "Una mirada más completa del talento.",
+      "enfoque": [
+        ["Evaluaciones psicométricas", "Herramientas seleccionadas según el objetivo y el perfil del puesto.", "chart"],
+        ["Entrevistas por competencias", "Exploramos experiencias y conductas relevantes para el rol.", "users"],
+        ["Análisis integrado", "Contrastamos hallazgos para ofrecer una lectura contextualizada.", "file-search"]
+      ],
+      "usos_titulo": "¿Para qué puedes utilizarla?",
+      "usos": [
+        ["Selección de personal", "Información adicional para decisiones de incorporación.", "users"],
+        ["Desarrollo de equipos", "Identificación de fortalezas y aspectos por desarrollar.", "chart"],
+        ["Movilidad interna", "Evaluación del perfil frente a nuevos desafíos.", "arrows"]
+      ],
+      "usos_foto": 2,
+      "usos_foto_alt": "Consultor revisando un informe de evaluación con una colaboradora",
+      "proceso_titulo": "Del perfil al informe.",
+      "proceso": [
+        ["Definimos el objetivo", "Entendemos el puesto, el contexto y tus necesidades."],
+        ["Aplicamos las herramientas", "Evaluaciones psicométricas y entrevistas por competencias."],
+        ["Integramos los hallazgos", "Analizamos los resultados en relación con el puesto y su contexto."],
+        ["Entregamos el informe", "Presentamos una lectura clara con recomendaciones accionables."]
+      ],
+      "entregables_titulo": "Información útil para actuar.",
+      "entregables": [
+        ["Resumen del perfil evaluado", "file-text"],
+        ["Fortalezas y brechas frente al puesto", "target"],
+        ["Hallazgos de entrevista y evaluación", "messages"],
+        ["Recomendaciones para la decisión o el desarrollo", "list-checks"]
+      ],
+      "nota": "El alcance y las herramientas se acuerdan según la necesidad de tu organización.",
+      "contacto_titulo": "Comprende el talento antes de dar el siguiente paso.",
+      "contacto_texto": "Cuéntanos tu necesidad y diseñemos juntos la mejor evaluación.",
+      "contacto_boton": "Conversemos"
+    },
+    {
+      "slug": "relaciones-laborales",
+      "estado": "propuesta",
+      "titulo": "Relaciones Laborales",
+      "titulo_corto": "Relaciones laborales",
+      "icono": "messages",
+      "tarjeta": "Acompañamos la gestión de personas con foco en diálogo y prevención.",
+      "frase": "Relaciones sanas. Gestión con criterio.",
+      "descripcion": "Acompañamos la gestión de personas con foco en el diálogo, la prevención y el contexto de tu organización.",
+      "boton": "Solicitar una asesoría",
+      "foto": 5,
+      "foto_alt": "Conversación de trabajo entre una consultora y dos colaboradores",
+      "enfoque_titulo": "Gestión laboral con diálogo y prevención.",
+      "enfoque": [
+        ["Asesoría laboral", "Orientación frente a situaciones de la relación con los trabajadores.", "scale"],
+        ["Prevención de conflictos", "Identificación de puntos críticos y alternativas de acción.", "shield"],
+        ["Comunicación laboral", "Acompañamiento en conversaciones y comunicaciones relevantes.", "messages"]
+      ],
+      "usos_titulo": "¿Cuándo puede ayudarte?",
+      "usos": [
+        ["Situaciones por resolver", "Casos que requieren una mirada externa y ordenada.", "file-search"],
+        ["Cambios en la organización", "Comunicaciones y conversaciones que conviene preparar con cuidado.", "arrows"],
+        ["Clima y convivencia", "Señales de tensión que es mejor atender a tiempo.", "users"]
+      ],
+      "usos_foto": 0,
+      "usos_foto_alt": "Reunión uno a uno entre una profesional y un colaborador",
+      "proceso_titulo": "De la situación a la acción.",
+      "proceso": [
+        ["Entendemos la situación", "Escuchamos tu necesidad y el contexto de la relación laboral."],
+        ["Revisamos antecedentes", "Analizamos la información y la documentación disponible."],
+        ["Definimos alternativas", "Proponemos opciones de acción y sus implicancias."],
+        ["Acompañamos las acciones", "Damos seguimiento según el alcance acordado."]
+      ],
+      "entregables_titulo": "Claridad para decidir cómo actuar.",
+      "entregables": [
+        ["Diagnóstico de la situación", "file-search"],
+        ["Recomendaciones priorizadas", "list-checks"],
+        ["Ruta de acción acordada", "route"],
+        ["Seguimiento según el alcance", "clock"]
+      ],
+      "nota": "El alcance y las herramientas se acuerdan según la necesidad de tu organización.",
+      "contacto_titulo": "Atendamos juntos tu situación laboral.",
+      "contacto_texto": "Cuéntanos qué está pasando y te orientamos sobre el siguiente paso.",
+      "contacto_boton": "Contactar a Berea"
+    },
+    {
+      "slug": "auditoria-rrhh",
+      "estado": "propuesta",
+      "titulo": "Auditoría de RR. HH.",
+      "titulo_corto": "Auditoría de RR. HH.",
+      "icono": "file-text",
+      "tarjeta": "Diagnóstico integral para una gestión más eficiente y en cumplimiento.",
+      "frase": "Una gestión ordenada empieza con una mirada clara.",
+      "descripcion": "Revisamos procesos y documentación de recursos humanos para identificar brechas y oportunidades de mejora.",
+      "boton": "Solicitar una auditoría",
+      "foto": 2,
+      "foto_alt": "Dos profesionales revisan documentos e indicadores de gestión",
+      "enfoque_titulo": "Una revisión ordenada de tu gestión humana.",
+      "enfoque": [
+        ["Procesos", "Revisión de prácticas y flujos de gestión humana.", "workflow"],
+        ["Documentación", "Análisis de la documentación incluida en el alcance.", "folder"],
+        ["Mejora", "Recomendaciones según las prioridades de tu empresa.", "trending"]
+      ],
+      "proceso_titulo": "Del alcance a las recomendaciones.",
+      "proceso": [
+        ["Acordamos el alcance", "Definimos los procesos y la documentación por revisar."],
+        ["Revisamos la información", "Analizamos prácticas, registros y flujos incluidos."],
+        ["Identificamos brechas", "Contrastamos lo revisado con lo que tu gestión requiere."],
+        ["Presentamos recomendaciones", "Compartimos hallazgos y acciones priorizadas."]
+      ],
+      "entregables_titulo": "Una mirada clara para mejorar.",
+      "entregables": [
+        ["Informe de hallazgos", "file-text"],
+        ["Brechas identificadas", "target"],
+        ["Recomendaciones priorizadas", "list-checks"],
+        ["Propuesta de acciones", "route"]
+      ],
+      "entregables_foto": 6,
+      "entregables_foto_alt": "Revisión de expedientes y documentación de recursos humanos",
+      "nota": "El alcance y las herramientas se acuerdan según la necesidad de tu organización.",
+      "contacto_titulo": "Ordenemos tu gestión de personas.",
+      "contacto_texto": "Cuéntanos qué procesos quieres revisar.",
+      "contacto_boton": "Contactar a Berea"
+    },
+    {
+      "slug": "recupero-de-subsidios",
+      "estado": "propuesta",
+      "titulo": "Recupero de Subsidios",
+      "titulo_corto": "Recupero de subsidios",
+      "icono": "database",
+      "tarjeta": "Identificamos y gestionamos casos de subsidios de EsSalud.",
+      "frase": "Ordenamos tus expedientes. Acompañamos tu gestión.",
+      "descripcion": "Gestionamos casos de subsidios de EsSalud por incapacidad temporal y maternidad, según los requisitos aplicables.",
+      "boton": "Solicitar una revisión",
+      "foto": 6,
+      "foto_alt": "Manos revisando una pila de expedientes junto a una calculadora",
+      "enfoque_titulo": "Cada caso, ordenado y con seguimiento.",
+      "enfoque": [
+        ["Revisión de casos", "Identificamos casos y documentación por revisar.", "file-search"],
+        ["Expedientes", "Organizamos la información requerida para el trámite.", "folder"],
+        ["Seguimiento", "Acompañamos el avance y las observaciones del proceso.", "clock"]
+      ],
+      "usos_titulo": "¿Qué subsidios gestionamos?",
+      "usos": [
+        ["Incapacidad temporal", "Casos de descanso médico sujetos a subsidio, según la normativa aplicable.", "clipboard"],
+        ["Maternidad", "Casos de subsidio por maternidad, conforme a los requisitos vigentes.", "users"]
+      ],
+      "proceso_titulo": "Así gestionamos cada caso.",
+      "proceso": [
+        ["Revisamos los casos", "Identificamos los casos y su situación actual."],
+        ["Validamos documentación", "Verificamos la información y los documentos requeridos."],
+        ["Gestionamos expedientes", "Organizamos y presentamos la información del trámite."],
+        ["Damos seguimiento", "Atendemos el avance y las observaciones del proceso."]
+      ],
+      "entregables_titulo": "Visibilidad sobre cada expediente.",
+      "entregables": [
+        ["Estado de casos revisados", "list-checks"],
+        ["Relación de documentos pendientes", "file-text"],
+        ["Expedientes organizados", "folder"],
+        ["Reporte de seguimiento", "chart"]
+      ],
+      "nota": "La recuperación depende del cumplimiento de requisitos y de la evaluación de EsSalud.",
+      "contacto_titulo": "Revisemos juntos tus casos pendientes.",
+      "contacto_texto": "Cuéntanos cuántos casos tienes y en qué estado se encuentran.",
+      "contacto_boton": "Contactar a Berea"
+    },
+    {
+      "slug": "people-analytics",
+      "estado": "propuesta",
+      "titulo": "People Analytics",
+      "titulo_corto": "People Analytics",
+      "icono": "chart",
+      "tarjeta": "Convertimos datos en insights para mejores decisiones.",
+      "frase": "Convierte información en decisiones.",
+      "descripcion": "Diseñamos indicadores, dashboards y automatizaciones para una gestión humana basada en información clara.",
+      "boton": "Solicitar una propuesta",
+      "foto": 7,
+      "foto_alt": "Pantalla con un dashboard de indicadores de gestión humana",
+      "enfoque_titulo": "Información clara para gestionar personas.",
+      "enfoque": [
+        ["Indicadores", "Métricas alineadas con las preguntas de tu negocio.", "chart"],
+        ["Dashboards", "Visualizaciones para explorar y comprender tus datos.", "dashboard"],
+        ["Automatización", "Flujos para reducir tareas repetitivas de información.", "workflow"]
+      ],
+      "usos_titulo": "¿Qué puedes conocer mejor?",
+      "usos": [
+        ["Rotación y permanencia", "Cómo evoluciona tu equipo y dónde poner atención.", "trending"],
+        ["Procesos de selección", "Tiempos y avance de tus búsquedas.", "target"],
+        ["Gestión del equipo", "Información consolidada para reuniones y reportes.", "dashboard"]
+      ],
+      "usos_foto": 3,
+      "usos_foto_alt": "Profesional presentando información a su equipo en una reunión",
+      "proceso_titulo": "De los datos a las decisiones.",
+      "proceso": [
+        ["Definimos las preguntas", "Acordamos qué necesitas saber y para qué decisiones."],
+        ["Revisamos los datos", "Evaluamos fuentes, calidad y estructura de la información."],
+        ["Diseñamos la solución", "Construimos indicadores, dashboards o automatizaciones."],
+        ["Validamos y entregamos", "Revisamos contigo los resultados y documentamos su uso."]
+      ],
+      "entregables_titulo": "Herramientas listas para usar.",
+      "entregables": [
+        ["Indicadores acordados", "chart"],
+        ["Dashboard según el alcance", "dashboard"],
+        ["Documentación de uso", "file-text"],
+        ["Acompañamiento en la entrega", "users"]
+      ],
+      "nota": "El alcance y las herramientas se acuerdan según la necesidad de tu organización.",
+      "contacto_titulo": "Convierte tus datos en decisiones.",
+      "contacto_texto": "Cuéntanos qué información necesitas y con qué datos cuentas.",
+      "contacto_boton": "Contactar a Berea"
+    }
+  ]
+}

@@ -1,0 +1,3 @@
+# Publica solo la carpeta web/ (las referencias y scripts quedan fuera).
+[build]
+  publish = "web"

@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: /revision/
+
+Sitemap: https://bereaconsulting.net/sitemap.xml
