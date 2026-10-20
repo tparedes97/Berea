@@ -94,4 +94,4 @@ especiales. `_redirects` envía `/servicios/` a la sección de servicios del ini
 muestran `404.html`. `netlify.toml` permite usar Netlify si algún día se cambia de hosting.
 
 El sitio no tiene formulario ni backend: los botones abren WhatsApp
-(+51 974 813 983) o el correo (info@bereaconsulting.net).
+(+51 937 505 928) o el correo (info@bereaconsulting.net).
