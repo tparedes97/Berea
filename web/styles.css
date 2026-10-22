@@ -535,3 +535,12 @@ h3 { font-size: 17px; line-height: 1.35; font-weight: 600; letter-spacing: -.005
   .site-header, .skip-link, .hero-service-media::before, .hero-service-media::after { display: none; }
   .section-tint, .contact { background: none; }
 }
+
+/* Lectura de la política de privacidad */
+.privacy-content { max-width: 850px; }
+.privacy-content h1 { overflow-wrap: anywhere; }
+.privacy-content h2 { margin-top: 2rem; font-size: clamp(1.3rem, 3vw, 1.7rem); }
+.privacy-content p, .privacy-content li { line-height: 1.8; }
+.privacy-content ul { padding-left: 1.4rem; }
+.privacy-content li { margin-block: .65rem; }
+.privacy-content a { text-decoration: underline; text-underline-offset: .2em; overflow-wrap: anywhere; }

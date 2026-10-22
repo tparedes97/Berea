@@ -156,6 +156,7 @@ def pie(servicio=False):
   </div>
   <div class="wrap footer-bottom">
     <small>© <span data-year>{date.today().year}</span> Berea Consulting</small>
+    <a href="/politica-de-privacidad/">Política de privacidad</a>
     {volver}
   </div>
 </footer>'''
@@ -391,6 +392,14 @@ def pagina_servicio(s):
         f'/assets/social/{s["slug"]}.jpg', cuerpo, actual=s, cuerpo_clase="page-service")
 
 
+def pagina_privacidad():
+    cuerpo = (RAIZ / "legales" / "privacidad.html").read_text(encoding="utf-8")
+    return documento("Política de privacidad | Berea Consulting",
+                     "Información sobre el tratamiento de datos personales, los servicios de Berea Consulting y el ejercicio de tus derechos en Perú.",
+                     "/politica-de-privacidad/", "/assets/social/inicio.jpg", cuerpo,
+                     cuerpo_clase="page-privacy")
+
+
 def pagina_404():
     cuerpo = '''<section class="section notfound">
   <div class="wrap">
@@ -442,9 +451,10 @@ def main():
     escribir("index.html", pagina_inicio())
     for s in SERVICIOS:
         escribir(f"servicios/{s['slug']}/index.html", pagina_servicio(s))
+    escribir("politica-de-privacidad/index.html", pagina_privacidad())
     escribir("404.html", pagina_404())
     escribir("revision/index.html", pagina_revision())
-    urls = ["/"] + [url_servicio(s) for s in SERVICIOS]
+    urls = ["/", "/politica-de-privacidad/"] + [url_servicio(s) for s in SERVICIOS]
     escribir("sitemap.xml", '<?xml version="1.0" encoding="UTF-8"?>\n'
              '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
              + "".join(f"  <url><loc>{SITIO['url']}{u}</loc><lastmod>{date.today().isoformat()}</lastmod></url>\n" for u in urls) + "</urlset>\n")
